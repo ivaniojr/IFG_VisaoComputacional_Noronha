@@ -4,14 +4,19 @@ Tarefa 1 - Relatório de Detecção de Objetos: Análise de Vacas em Vista Aére
 
 O script desenvolvido é um pipeline completo de avaliação de detecção de objetos focado em calcular métricas reais de desempenho, não apenas exibir imagens. Ele funciona nas seguintes etapas:
 
-    1.1. Definição do Ground Truth (Realidade): Primeiro, fornecemos ao código onde as vacas realmente estão na imagem 00061.jpg 
-              usando coordenadas exatas (caixas delimitadoras/bounding boxes).
+    1.1. Definição do Ground Truth (Realidade): Primeiro, fornecemos ao código onde as vacas realmente estão na imagem
+         00061.jpg usando coordenadas exatas (caixas delimitadoras/bounding boxes).
+         
     1.2. Inferência do Modelo: O modelo YOLOv8 processa a imagem e retorna suas próprias predições (o que ele achou e onde).
-    1.3. Cálculo de IoU (Intersection over Union): O código possui uma função matemática que calcula a porcentagem de sobreposição
-              entre a caixa predita pelo modelo e a caixa real. Isso mede a precisão espacial da detecção.
-    1.4. Avaliação de Métricas (Precision/Recall): Usando um limite (threshold) de IoU de 0.35, o programa classifica as detecções 
-              do YOLO em Verdadeiros Positivos (TP) ou Falsos Positivos (FP), gerando uma Matriz de Confusão.
-    1.5. Visualização: Por fim, plota a imagem sobrepondo as caixas reais (em verde) e as do modelo (em vermelho) para inspeção visual.
+    
+    1.3. Cálculo de IoU (Intersection over Union): O código possui uma função matemática que calcula a porcentagem de
+         sobreposição entre a caixa predita pelo modelo e a caixa real. Isso mede a precisão espacial da detecção.
+         
+    1.4. Avaliação de Métricas (Precision/Recall): Usando um limite (threshold) de IoU de 0.35, o programa classifica 
+         as detecções do YOLO em Verdadeiros Positivos (TP) ou Falsos Positivos (FP), gerando uma Matriz de Confusão.
+         
+    1.5. Visualização: Por fim, plota a imagem sobrepondo as caixas reais (em verde) e as do modelo (em vermelho) para 
+         inspeção visual.
 
 2. Comparação dos Modelos YOLO (A Evolução)
 
