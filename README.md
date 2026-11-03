@@ -1,4 +1,4 @@
-Relatório de Detecção de Objetos: Análise de Vacas em Vista Aérea (YOLOv8)
+Tarefa 1 - Relatório de Detecção de Objetos: Análise de Vacas em Vista Aérea (YOLOv8)
 
 1. Como o Programa Funciona
 
