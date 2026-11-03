@@ -57,3 +57,6 @@ Métricas Finais (Considerando IoU >= 0.35): Como relaxamos a exigência espacia
 Conclusão
 
 O experimento demonstra que, para ângulos não convencionais (como drones ou satélites), modelos menores tendem a falhar na classificação (confundindo vacas com ursos ou cachorros). O uso de um modelo mais robusto (Large) resolveu o problema de classificação, enquanto a métrica de IoU nos ajudou a entender que a precisão espacial (o tamanho exato da caixa) ainda pode variar.
+
+<img width="745" height="440" alt="image" src="https://github.com/user-attachments/assets/044ef62f-dbe7-4980-adf8-242bcf69ae90" />
+
