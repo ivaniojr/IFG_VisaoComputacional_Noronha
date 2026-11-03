@@ -25,9 +25,15 @@ O script desenvolvido é um pipeline completo de avaliação de detecção de ob
 
 Durante os nossos testes com esta imagem específica, observamos perfeitamente o clássico trade-off (compromisso) entre tamanho/velocidade e precisão nas redes neurais. A imagem 00061.jpg é particularmente desafiadora por ser uma vista aérea, um ângulo pouco comum na maioria dos datasets genéricos.
 
-    YOLOv8 Nano (yolov8n.pt): O modelo mais leve e rápido. Ele conseguiu encontrar a caixa do objeto, mas falhou na classificação, confundindo a vaca vista de cima com um urso (bear).
-    YOLOv8 Medium (yolov8m.pt): Um modelo intermediário. Teve um desempenho melhor, localizando os dois objetos, mas ainda sofreu com a perspectiva, classificando uma das vacas como cachorro (dog).
-    YOLOv8 Large (yolov8l.pt): O modelo mais pesado e com mais parâmetros. Foi o único capaz de abstrair corretamente as características da imagem aérea, classificando perfeitamente ambos os objetos como vacas (cow - classe 19).
+    YOLOv8 Nano (yolov8n.pt): O modelo mais leve e rápido. Ele conseguiu encontrar a caixa do objeto, 
+    mas falhou na classificação, confundindo a vaca vista de cima com um urso (bear).
+    
+    YOLOv8 Medium (yolov8m.pt): Um modelo intermediário. Teve um desempenho melhor, localizando os 
+    dois objetos, mas ainda sofreu com a perspectiva, classificando uma das vacas como cachorro (dog).
+    
+    YOLOv8 Large (yolov8l.pt): O modelo mais pesado e com mais parâmetros. Foi o único capaz de abstrair
+    corretamente as características da imagem aérea, classificando perfeitamente ambos os objetos como
+    vacas (cow - classe 19).
 
 3. Resultados Obtidos com a Imagem 00061.jpg (Modelo Large)
 
